@@ -29,11 +29,9 @@
 }
 
 /* Universial tags */
-
 * {
   box-sizing: border-box;
 }
-
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
@@ -89,6 +87,11 @@ section {
   width: 100%;
   height: 100vh;
 }
+button {
+  border: none;
+  background-color: transparent;
+}
+
 /* Navbar */
 
 #navbar {
@@ -186,5 +189,151 @@ section {
 
 .aboutme {
   text-align: center;
+  margin: auto;
+  width: 80%;
+  height: 30%;
+}
+.education {
+  margin-left: 32px;
+}
+.education table {
+  border-spacing: 16px;
+}
+
+.education .collegeImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 3px 4px 4px var(--color--medium-purple);
+}
+
+/*SKILLS*/
+
+#skills {
+  height: 100vh;
+}
+
+#skills h2 {
+  text-align: center;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 16px;
+  background-color: var(--color--bright-purple);
+}
+.skills li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.skill i {
+  font-size: var(--font-large);
+  margin: 32px 0 0 5px;
+  color: var(--color--medium-purple);
+}
+
+.skills_description {
+  margin-left: 32px;
+}
+
+/*Project*/
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#projects h2 {
+  text-align: center;
+}
+
+.slide__container {
+  margin: 0 auto;
+  width: 500px;
+  padding: 10px;
+  position: relative;
+  background-color: var(--color--light-purple);
+}
+
+.slide__container .slide {
+  display: none;
+  width: 100%;
+}
+
+.slide__container .slide.fade {
+  animation: fade 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.slide__container .slide img {
   margin: 8px auto;
+  transform: translateX(12.5%);
+  width: 80%;
+  height: 50vh;
+  background-size: cover;
+}
+.slide__container .prev,
+.slide__container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  transition: all 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.slide__container .prev:hover,
+.slide__container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: var(--color--white);
+}
+
+.slide__container .prev {
+  left: 2px;
+}
+
+.slide__container .next {
+  right: 2px;
+}
+
+.project__title {
+  text-align: center;
+}
+
+.dots__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.dots__container .dot {
+  cursor: pointer;
+  margin: 5px;
+  width: 20px;
+  height: 20px;
+  color: var(--color--bright-purple);
+  border-radius: 50%;
+  background-color: var(--color--bright-purple);
+}
+
+.dots__container .dot.active {
+  border: 2px solid var(--color--light-purple);
+}
+
+/*Contact Me*/
+
+#contactme h2,
+p {
+  text-align: center;
 }
