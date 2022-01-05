@@ -1,3 +1,4 @@
+
 /* Project Imgage Slides*/
 
 let currentSlide = 0;
