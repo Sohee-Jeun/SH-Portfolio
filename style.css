@@ -100,12 +100,12 @@ button {
 /* Navbar */
 
 #navbar {
-  position: fixed;
+  position: fixed; /*항상 제일 위에 고정*/
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background-color: var(--color--white);
+  background-color: transparent;
   color: var(--color--dark-purple);
   width: 100%;
   transition: all var(--animation-duration) ease-in-out;
@@ -158,6 +158,7 @@ button {
   width: 100%;
   height: 100vh;
   align-items: center;
+  padding-top: 120px;
 }
 
 .profileimg {
