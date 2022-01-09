@@ -120,6 +120,9 @@ button {
   padding-left: 8px;
   align-items: center;
 }
+#navbar.navbar__dark {
+  background-color: var(--color--white);
+}
 
 .logo {
   width: 50px;
