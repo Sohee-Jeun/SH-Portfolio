@@ -352,3 +352,20 @@ p {
 .co_social {
   font-size: var(--font-medium);
 }
+
+/* Arrow Up */
+.arrowUp {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  opacity: 0;
+}
+
+.arrowUp i {
+  border: 1px solid var(--color--dark-purple);
+  background-color: var(--color--dark-purple);
+  border-radius: 50%;
+  font-size: var(--font-large);
+  color: white;
+  padding: 8px 10px;
+}

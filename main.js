@@ -24,7 +24,15 @@ navbarMenu.addEventListener('click', (event) =>{
     scrollTo.scrollIntoView({behavior:"smooth"});
 });
 
-
+/* Arrow up */
+const arrowUpBtn = document.querySelector('.arrowUp');
+const home = document.querySelector('#home');
+const homeHeight = home.getBoundingClientRect().height;
+arrowUpBtn.addEventListener('scroll', () => {
+    if(window.scrollY > homeHeight){
+        arrowUpBtn.style.opacity = 1;
+    }
+})
 
 
 /* Project Imgage Slides*/
