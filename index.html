@@ -10,13 +10,10 @@
     />
     <meta name="author" content="Sohee" />
     <link rel="icon" type="image/png" href="imgs/logo.png" />
-    <script
-      src="https://kit.fontawesome.com/5a5a075177.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato&family=Mulish&family=Poppins:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <script
@@ -28,33 +25,190 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav id="navbar">
+    <nav id="navbar" class="navbar__dark">
       <div class="navbar__logo">
-        <img src="imgs/logo.png" alt="SOHEE's logo" class="logo" />
         <a href="">Sohee Jeun</a>
       </div>
 
       <ul class="navbar__menu">
         <li class="navbar__menu__item active" data-link="#home">Home</li>
-        <li class="navbar__menu__item" data-link="#aboutme">About Me</li>
         <li class="navbar__menu__item" data-link="#skills">Skills</li>
         <li class="navbar__menu__item" data-link="#projects">Projects</li>
+        <li class="navbar__menu__item" data-link="#aboutme">About Me</li>
         <li class="navbar__menu__item" data-link="#contactme">Contact Me</li>
       </ul>
     </nav>
     <!-- Home -->
-    <section id="home" class="section">
-      <img class="profileimg" src="imgs/profilephoto.JPG" alt="sohee profile" />
-      <div class="home_box">
-        <span class="intro"
-          >Hi, I'm Sohee <br />
-          the front-end Engineer.
-        </span>
-        <ul class="socials">
-          <li class="social"><i class="fab fa-github-square"></i></li>
-          <li class="social"><i class="fab fa-linkedin"></i></li>
-          <li class="social"><i class="fas fa-envelope"></i></li>
+    <section id="home">
+      <div class="home_container">
+        <img
+          class="profileimg"
+          src="imgs/soheeprofile.JPG"
+          alt="sohee profile"
+        />
+        <div class="home_box">
+          <span class="greeting">Good morning!☀️</span>
+          <span class="intro"> I'm Sohee. the front-end Engineer. </span>
+          <ul class="socials">
+            <a href=""
+              ><li class="social"><i class="fab fa-github-square"></i></li
+            ></a>
+            <a href=""
+              ><li class="social"><i class="fab fa-linkedin"></i></li
+            ></a>
+            <a href=""
+              ><li class="social"><i class="fas fa-envelope"></i></li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!--Skills-->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skils">
+        <div class="skills_description">
+          Experience with all phases of the software life-cycle. <br />Passion
+          for learning new technologies. Capable of working within a team
+          environment and independently. <br />Ability to plan and time
+          schedule, work under strict time pressure and adapt quickly when
+          needed.
+        </div>
+        <ul class="skills">
+          <li class="skill"><i class="fab fa-html5"></i> HTML</li>
+          <li class="skill"><i class="fab fa-css3-alt"></i>CSS</li>
+          <li class="skill"><i class="fab fa-js"></i>JavaScript</li>
+          <li class="skill"><i class="fab fa-github-square"></i>Git</li>
+          <li class="skill"><i class="fab fa-python"></i>Python</li>
+          <li class="skill"><i class="fab fa-react"></i>React</li>
         </ul>
+      </div>
+    </section>
+    <!--Project-->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="slide__container">
+        <div class="slide fade">
+          <div class="details">
+            <a href="https://github.com/Sohee-Jeun/web1" class="project">
+              <img
+                src="imgs/220618web1.png"
+                alt="veryfirstproject"
+                class="project__img"
+            /></a>
+            <div class="description">
+              <h3 class="project__title">Very First Project</h3>
+              <span class="language">HTML</span>
+              <span class="project__description">This is a first Project.</span>
+            </div>
+          </div>
+        </div>
+        <div class="slide fade">
+          <div class="details">
+            <a href="https://github.com/Sohee-Jeun/nav_bar" class="project">
+              <img
+                src="imgs/220618navbar.png"
+                alt="navbar project"
+                class="project__img"
+              />
+            </a>
+            <div class="desctiption">
+              <h3 class="project__title">Navbar Project</h3>
+              <span class="language">HTML, CSS, JavaScript</span>
+            </div>
+          </div>
+        </div>
+        <div class="slide fade">
+          <div class="details">
+            <a
+              href="https://github.com/Sohee-Jeun/youtube_mobile"
+              class="project"
+            >
+              <img
+                src="imgs/220618youtube.png"
+                alt="Youtube Clone Coding"
+                class="project__img"
+            /></a>
+            <div class="description">
+              <h3 class="project__title">Youtube Clone</h3>
+              <span class="project__description">HTML, CSS, JavaScript</span>
+            </div>
+          </div>
+        </div>
+        <div class="slide fade">
+          <div class="details">
+            <a
+              href="https://github.com/Sohee-Jeun/shoppingmallgame"
+              class="project"
+            >
+              <img
+                src="imgs/220618shoppingmall.png"
+                alt="Minigame"
+                class="project__img"
+            /></a>
+            <div class="description">
+              <h3 class="project__title">Minigame E-Shop</h3>
+              <span class="language">HTML, CSS, JavaScript</span>
+            </div>
+          </div>
+        </div>
+        <div class="slide fade">
+          <div class="details">
+            <a href="https://github.com/Sohee-Jeun/Portfolio" class="project">
+              <img
+                src="imgs/220618portfolio.png"
+                alt="Poftfolio Website"
+                class="project__img"
+            /></a>
+            <div class="decription">
+              <h3 class="project__title">Sohee's portfolio</h3>
+              <span class="project__description">HTML, CSS, JavaScript</span>
+            </div>
+          </div>
+        </div>
+        <div class="slide fade">
+          <div class="details">
+            <a href="https://github.com/Sohee-Jeun/carrot_game" class="project">
+              <img
+                src="imgs/220618fungame.png"
+                alt="Fungame"
+                class="project__img"
+            /></a>
+            <div class="description">
+              <h3 class="project__title">Fun Game</h3>
+              <span class="project__description">HTML, CSS, JavaScript</span>
+            </div>
+          </div>
+        </div>
+        <div class="slide fade">
+          <div class="details">
+            <a
+              href="https://github.com/Sohee-Jeun/whatShouldIDrink"
+              class="project"
+            >
+              <img
+                src="imgs/220618drink.png"
+                alt="WhatShouldIDrink"
+                class="project__img"
+            /></a>
+            <div class="description">
+              <h3 class="project__title">What Should I Drink</h3>
+              <span class="project__description">HTML, CSS, JavaScript</span>
+            </div>
+          </div>
+        </div>
+        <button class="prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      <div class="dots__container">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
       </div>
     </section>
     <!-- About Me -->
@@ -66,7 +220,7 @@
         Also, I get along well with my team members and understand other
         people's feelings well. I tend to think of groups more important than
         individuals. That's why I have a personality that constantly strives to
-        achieve joint goals within the organization.You may think I'm slow, but
+        achieve joint goals within the organization. You may think I'm slow, but
         I like to learn, and I always think positively and eventually do
         anything when I see the distant future. I have a personality that makes
         everything work somehow.
@@ -85,7 +239,7 @@
               <td class="collegeName">
                 St. Lawrence College<br />
 
-                Computer Network and Technical Support<br />
+                Diploma of Computer Network and Technical Support<br />
                 Jan, 2020 - Aug, 2021
               </td>
             </tr>
@@ -103,127 +257,9 @@
         </table>
       </div>
     </section>
-    <!--Skills-->
-    <section id="skills" class="section">
-      <h2>Skills</h2>
-      <div class="skils">
-        <ul class="skills">
-          <li class="skill"><i class="fab fa-html5"></i> HTML</li>
-          <li class="skill"><i class="fab fa-css3-alt"></i>CSS</li>
-          <li class="skill"><i class="fab fa-js"></i>JavaScript</li>
-          <li class="skill"><i class="fab fa-github-square"></i>Git</li>
-          <li class="skill"><i class="fab fa-python"></i>Python</li>
-          <li class="skill"><i class="fab fa-react"></i>React</li>
-        </ul>
-      </div>
-      <div class="skills_description">
-        Experience with all phases of the sofeware life-cycle. Passion for
-        learning new technologies. Capable of working within a tean environment
-        and independently. Ability to plan and time schedule, work under strict
-        time pressure and adapt quickly when needed.
-      </div>
-    </section>
-    <!--Project-->
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <div class="slide__container">
-        <div class="slide fade">
-          <a href="https://github.com/Sohee-Jeun/web1" class="project">
-            <img
-              src="imgs/harrypotter.png"
-              alt="veryfirstproject"
-              class="project__img"
-            />
-            <h3 class="project__title">Very First Project</h3>
-            <span class="project__description">HTML</span>
-          </a>
-        </div>
-        <div class="slide fade">
-          <a href="https://github.com/Sohee-Jeun/nav_bar" class="project">
-            <img
-              src="imgs/navbar.png"
-              alt="navbar project"
-              class="project__img"
-            />
-            <h3 class="project__title">Navbar Project</h3>
-            <span class="project__description">HTML, CSS, JavaScript</span>
-          </a>
-        </div>
-        <div class="slide fade">
-          <a
-            href="https://github.com/Sohee-Jeun/youtube_mobile"
-            class="project"
-          >
-            <img
-              src="imgs/youtubeCloneCoding.png"
-              alt="Youtube Clone Coding"
-              class="project__img"
-            />
-            <h3 class="project__title">Youtube Clone Coding</h3>
-            <span class="project__description">HTML, CSS, JavaScript</span>
-          </a>
-        </div>
-        <div class="slide fade">
-          <a
-            href="https://github.com/Sohee-Jeun/shoppingmallgame"
-            class="project"
-          >
-            <img src="imgs/minigame.png" alt="Minigame" class="project__img" />
-            <h3 class="project__title">Minigame Shoppingmall</h3>
-            <span class="project__description">HTML, CSS, JavaScript</span>
-          </a>
-        </div>
-        <div class="slide fade">
-          <a
-            href="https://github.com/Sohee-Jeun/shoppingmallgame"
-            class="project"
-          >
-            <img
-              src="imgs/portfolio.png"
-              alt="Poftfolio Website"
-              class="project__img"
-            />
-            <h3 class="project__title">Sohee's portfolio</h3>
-            <span class="project__description">HTML, CSS, JavaScript</span>
-          </a>
-        </div>
-        <div class="slide fade">
-          <a href="https://github.com/Sohee-Jeun/carrot_game" class="project">
-            <img src="imgs/fungame.png" alt="Fungame" class="project__img" />
-            <h3 class="project__title">FunGame</h3>
-            <span class="project__description">HTML, CSS, JavaScript</span>
-          </a>
-        </div>
-        <div class="slide fade">
-          <a
-            href="https://github.com/Sohee-Jeun/whatShouldIDrink"
-            class="project"
-          >
-            <img
-              src="imgs/whatShouldIDrink.png"
-              alt="WhatShouldIDrink"
-              class="project__img"
-            />
-            <h3 class="project__title">What Should I Drink</h3>
-            <span class="project__description">HTML, CSS, JavaScript</span>
-          </a>
-        </div>
-        <button class="prev"><i class="fas fa-chevron-left"></i></button>
-        <button class="next"><i class="fas fa-chevron-right"></i></button>
-      </div>
-      <div class="dots__container">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div>
-    </section>
     <!--ContactMe-->
     <section id="contactme" class="section">
-      <h2>Let's Talk</h2>
+      <h2 class="contactmetitle">Let's Talk</h2>
       <ul class="co_socials">
         <li class="co_social"><i class="fab fa-github-square"></i></li>
         <li class="co_social"><i class="fab fa-linkedin"></i></li>
@@ -232,7 +268,7 @@
       <p>2021 Sohee Jeun - All rights reserved</p>
     </section>
     <!-- Arrow up-->
-    <button class="arrowUp">
+    <button type="button" class="arrowUp">
       <i class="fas fa-arrow-up"></i>
     </button>
   </body>

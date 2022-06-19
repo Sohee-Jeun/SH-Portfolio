@@ -1,12 +1,14 @@
 'use strict';
+
+/*navbar light*/
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
-
 
 document.addEventListener('scroll', () => {
   
  if(window.scrollY > navbarHeight){
-     navbar.classList.add('navbar__dark');
+    navbar.classList.add('navbar__dark');
+    
  }else{
     navbar.classList.remove('navbar__dark')
  }
@@ -24,15 +26,27 @@ navbarMenu.addEventListener('click', (event) =>{
     scrollTo.scrollIntoView({behavior:"smooth"});
 });
 
+function scrollIntoView(selector){
+    const scrollTo = document.querySelector(selector);
+    scrollTo.scrollIntoView({behavior:'smooth'});
+  
+}
+
 /* Arrow up */
 const arrowUpBtn = document.querySelector('.arrowUp');
 const home = document.querySelector('#home');
-const homeHeight = home.getBoundingClientRect().height;
-arrowUpBtn.addEventListener('scroll', () => {
-    if(window.scrollY > homeHeight){
-        arrowUpBtn.style.opacity = 1;
+const homeheight = home.getBoundingClientRect().height;
+document.addEventListener('scroll', () => {
+    if(window.scrollY > homeheight / 2){
+        arrowUpBtn.classList.add('visible');
+    }else {
+        arrowUpBtn.classList.remove('visible');
     }
-})
+});
+
+arrowUpBtn.addEventListener('click',() => {
+    scrollIntoView('#home');
+});
 
 
 /* Project Imgage Slides*/
@@ -72,3 +86,15 @@ dots.forEach((dot, index)=>{
         currentSlide = index;
     })
 });
+
+/*  Active scroll menu to navbar */
+const activeNav = document.querySelector('navbar__menu__item');
+const activeNavHeight = activeNav.getClientRects().height;
+/* activeNav.addEventListener('scroll', () => {
+    if(condition){
+        activeNav.classList.add('active');
+    }else{
+        activeNav.classList.remove('active');
+    }
+});*/
+
