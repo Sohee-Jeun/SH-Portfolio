@@ -327,16 +327,19 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  align-content: center;
+  width: fit-content;
   transform: translateY(48%);
 }
 .description {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   text-align: left;
+  height: auto;
 }
 .project__title {
   font-size: var(--font-medium);
+  margin-bottom: 20px;
 }
 
 .language,
@@ -345,15 +348,22 @@ button {
 }
 
 .language {
+  margin-bottom: 10px;
+  padding: 0 4px;
+  width: fit-content;
   font-size: var(--font-regular);
-  color: var(--color--dark-green);
+  background-color: var(--color--dark-green);
+  color: var(--color--white);
+  border-radius: 4px;
 }
 
 .slide__container .slide.fade {
   animation: fade 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 .slide img {
-  width: 70%;
+  display: block;
+  margin: 0 60px;
+  width: 250px;
   height: 200px;
 }
 
@@ -473,6 +483,7 @@ button {
   }
 
   /* Home */
+
   #home {
     width: 100%;
   }
@@ -503,8 +514,8 @@ button {
 
   .intro {
     margin-bottom: 32px;
-    justify-content:flex-start
-    line-height: 110%;
+    justify-content: flex-start;
+    line-height: 100%;
     font-size: var(--font-medium);
   }
   .socials {
@@ -524,5 +535,13 @@ button {
   .details {
     flex-direction: column;
     transform: translate(5%, 15%);
+  }
+  .project__title {
+    font-size: var(--font-regular);
+  }
+
+  .language,
+  .project__description {
+    font-size: var(--font-micro);
   }
 }
