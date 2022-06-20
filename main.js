@@ -176,3 +176,10 @@ else if (hour < 18) welcomeText = welcomeTypes[1];
 else welcomeText = welcomeTypes[2];
 
 greeting.innerHTML = welcomeText;
+
+/* Media Query */
+const toggleBtn = document.querySelector('.nav_togleBtn');
+const navMenu = document.querySelector('.navbar__menu');
+toggleBtn.addEventListener('click', ()=>{
+    navMenu.classList.toggle('active');
+});

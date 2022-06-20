@@ -160,6 +160,13 @@ button {
   border: 1.5px solid var(--color--dark-green);
 }
 
+.nav_togleBtn {
+  display: none;
+  position: absolute;
+  right: 20px;
+  font-size: var(--font-medium);
+  color: var(--color--dark-green);
+}
 /* HOME */
 
 #home {
@@ -438,4 +445,84 @@ button {
 }
 .arrowUp.visible {
   opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    background-color: var(--color--grey);
+    animation: background-color 200ms ease-in;
+  }
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar__menu__item {
+    width: 100%;
+    text-align: center;
+  }
+  .nav_togleBtn {
+    display: block;
+  }
+  .navbar__menu.active {
+    display: flex;
+  }
+
+  /* Home */
+  #home {
+    width: 100%;
+  }
+  .home_container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .profileimg {
+    margin-bottom: 32px;
+    width: 250px;
+    height: 250px;
+  }
+
+  .home_box {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .greeting {
+    justify-content: center;
+
+    font-size: var(--font-medium);
+    color: var(--color--dark-green);
+  }
+
+  .intro {
+    margin-bottom: 32px;
+    justify-content:flex-start
+    line-height: 110%;
+    font-size: var(--font-medium);
+  }
+  .socials {
+    justify-content: center;
+    transform: translateX(-9px);
+  }
+  .social {
+    margin: 0 32px;
+    font-size: var(--font-medium);
+  }
+
+  /* Projects */
+
+  .slide__container {
+    width: 100%;
+  }
+  .details {
+    flex-direction: column;
+    transform: translate(5%, 15%);
+  }
 }
