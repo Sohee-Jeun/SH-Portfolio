@@ -197,7 +197,7 @@ button {
 .greeting,
 .intro {
   transform: translateX(30%);
-  font-size: var(--font-large);
+  font-size: 40px;
   color: var(--color--dark-green);
 }
 .intro {

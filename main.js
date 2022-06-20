@@ -168,7 +168,7 @@ function typing(){
 
 const greeting = document.querySelector(".greeting");
 const hour = new Date().getHours();
-const welcomeTypes = ["Good morning☀️", "Good afternoon🌱", "Good evening🌝"];
+const welcomeTypes = ["Good morning ☀️", "Good afternoon 🌱", "Good evening 🌝"];
 let welcomeText = "";
 
 if (hour < 12) welcomeText = welcomeTypes[0];
