@@ -13,6 +13,7 @@
 
   /* Font size */
   --font-large: 48px;
+  --font-mLarge: 35px;
   --font-medium: 28px;
   --font-regular: 18px;
   --font-small: 16px;
@@ -173,9 +174,9 @@ button {
 }
 
 .profileimg {
-  width: 300px;
-  height: 300px;
-  transform: translate(-30%, 60%);
+  width: 350px;
+  height: 350px;
+  transform: translateY(60%);
   border-radius: 4px;
   box-shadow: 3px 4px 4px var(--color--blue-green);
 }
@@ -183,29 +184,43 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  align-content: center;
-  transform: translate(25%, 100%);
+  width: 40%;
+  transform: translateY(100%);
 }
 .greeting,
 .intro {
-  font-size: var(--font-medium);
+  transform: translateX(30%);
+  font-size: var(--font-large);
   color: var(--color--dark-green);
 }
 .intro {
+  line-height: 120%;
   margin-bottom: 32px;
-  transform: translateX(12%);
+}
+
+/* curser js effect*/
+.intro .home__title + span {
+  border-left: 0.15rem solid var(--color--blue-green);
+  animation: blink 0.7s ease-in-out infinite;
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 .socials {
   display: flex;
   justify-content: space-evenly;
-  transform: translateX(30px);
+  transform: translateX(50px);
 }
 
 .social {
-  margin: 0 32px;
-  font-size: var(--font-medium);
+  font-size: var(--font-mLarge);
   color: var(--color--green);
 }
 
