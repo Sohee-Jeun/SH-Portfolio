@@ -166,6 +166,10 @@ function typing(){
     new typeWriter(txtEl, words, wait);
 };
 
+/**
+ * greetings are difference depending on time.
+ */
+
 const greeting = document.querySelector(".greeting");
 const hour = new Date().getHours();
 const welcomeTypes = ["Good morning ☀️", "Good afternoon 🌱", "Good evening 🌝"];
@@ -178,6 +182,7 @@ else welcomeText = welcomeTypes[2];
 greeting.innerHTML = welcomeText;
 
 /* Media Query */
+
 const toggleBtn = document.querySelector('.nav_togleBtn');
 const navMenu = document.querySelector('.navbar__menu');
 toggleBtn.addEventListener('click', ()=>{
