@@ -41,12 +41,14 @@
     <!-- Home -->
     <section id="home">
       <div class="home_container">
-        <img
-          class="profileImg"
-          src="imgs/soheeprofile.JPG"
-          alt="sohee profile"
-        />
-        <div class="home_box">
+        <div class="home_container_img">
+          <img
+            class="profileImg"
+            src="imgs/soheeprofile.JPG"
+            alt="sohee profile"
+          />
+        </div>
+        <div class="home_container_text">
           <span class="greeting"></span>
           <span class="intro">
             I'm
@@ -56,6 +58,7 @@
               data-words='["Sohee.", "a Front-end Developer.", "a Joy.", "a Dreamer.", "a Barista."]'
               >Sohee.
             </span>
+            <span></span>
           </span>
           <ul class="socials">
             <a href=""
@@ -69,6 +72,8 @@
             </a>
           </ul>
         </div>
+
+        <div class="home_box"></div>
       </div>
     </section>
 
@@ -84,17 +89,42 @@
           needed.
         </p>
         <ul class="skills">
-          <li class="skill"><i class="fab fa-html5"></i> HTML</li>
-          <li class="skill"><i class="fab fa-css3-alt"></i>CSS</li>
-          <li class="skill"><i class="fab fa-js"></i>JavaScript</li>
-          <li class="skill"><i class="fab fa-github-square"></i>Git</li>
-          <li class="skill"><i class="fab fa-python"></i>Python</li>
-          <li class="skill"><i class="fab fa-react"></i>React</li>
+          <li class="skill_icon">
+            <div class="skill_content">
+              <i class="fab fa-html5"></i> <span>HTML</span>
+            </div>
+          </li>
+          <li class="skill_icon">
+            <div class="skill_content">
+              <i class="fab fa-css3-alt"></i><span>CSS</span>
+            </div>
+          </li>
+          <li class="skill_icon">
+            <div class="skill_content">
+              <i class="fab fa-js"></i> <span>JavaScript</span>
+            </div>
+          </li>
+
+          <li class="skill_icon">
+            <div class="skill_content">
+              <i class="fab fa-github-square"></i> <span>Git</span>
+            </div>
+          </li>
+          <li class="skill_icon">
+            <div class="skill_content">
+              <i class="fab fa-python"></i> <span>Python</span>
+            </div>
+          </li>
+          <li class="skill_icon">
+            <div class="skill_content">
+              <i class="fab fa-react"></i> <span>React</span>
+            </div>
+          </li>
         </ul>
       </div>
     </section>
     <!--Project-->
-    <section id="projects" class="section">
+    <section id="projects">
       <h2>Projects</h2>
       <div class="slide__container">
         <div class="slide fade">
@@ -246,60 +276,54 @@
       </div>
     </section>
     <!-- About Me -->
-    <section id="aboutme" class="section">
+    <section id="aboutme">
       <h2>About Me</h2>
-      <p class="aboutme">
-        I am good at dealing with people and lead the atmosphere well due to my
-        high affinity and sociality.<br />
-        Also, I get along well with my team members and understand other
-        people's feelings well. I tend to think of groups more important than
-        individuals. That's why I have a personality that constantly strives to
-        achieve joint goals within the organization. You may think I'm slow, but
-        I like to learn, and I always think positively and eventually do
-        anything when I see the distant future. I have a personality that makes
-        everything work somehow.
-      </p>
-      <div class="education">
-        <table>
-          <tbody>
-            <tr>
-              <td>
-                <img
-                  class="collegeImg"
-                  src="imgs/st-lawrence_logo.png"
-                  alt="st.lawrence"
-                />
-              </td>
-              <td class="collegeName">
-                St. Lawrence College<br />
-
-                Diploma of Computer Network and Technical Support<br />
-                Jan, 2020 - Aug, 2021
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img class="collegeImg" src="imgs/konyang.png" alt="Konyang" />
-              </td>
-              <td class="collegeName">
-                Konyang University<br />
-                Bachelor of Medical IT Engineering <br />
-                Mar, 2015 - Feb, 2019
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="aboutme_container">
+        <p class="aboutme">
+          I am good at dealing with people and lead the atmosphere well due to
+          my high affinity and sociality.<br />
+          Also, I get along well with my team members and understand other
+          people's feelings well. I tend to think of groups more important than
+          individuals. That's why I have a personality that constantly strives
+          to achieve joint goals within the organization. You may think I'm
+          slow, but I like to learn, and I always think positively and
+          eventually do anything when I see the distant future. I have a
+          personality that makes everything work somehow.
+        </p>
+        <div class="educationList">
+          <img
+            src="./imgs/st-lawrence_logo.png"
+            alt="st.lawrence"
+            class="collegeImg"
+          />
+          <dl class="education">
+            <dt class="schoolName">St. Lawrence College</dt>
+            <dd class="major">
+              Diploma of Computer Network and Technical Support
+            </dd>
+            <dd class="period">Jan, 2020 - Aug, 2021</dd>
+          </dl>
+        </div>
+        <div class="educationList">
+          <img src="./imgs/konyang.png" alt="konyang" class="collegeImg" />
+          <dl class="education">
+            <dt class="schoolName">Konyang University</dt>
+            <dd class="major">Bachelor of Medical IT Engineering</dd>
+            <dd class="period">Mar, 2015 - Feb, 2019</dd>
+          </dl>
+        </div>
       </div>
     </section>
     <!--ContactMe-->
-    <section id="contactme" class="section">
-      <h2 class="contactmetitle">Let's Talk</h2>
+    <section id="contactme">
+      <h2>Let's Talk</h2>
+
       <ul class="co_socials">
         <li class="co_social"><i class="fab fa-github-square"></i></li>
         <li class="co_social"><i class="fab fa-linkedin"></i></li>
         <li class="co_social"><i class="fas fa-envelope"></i></li>
       </ul>
-      <p>2021 Sohee Jeun - All rights reserved</p>
+      <p class="copyright">2021 Sohee Jeun - All rights reserved</p>
     </section>
     <!-- Arrow up-->
     <button type="button" class="arrowUp">
