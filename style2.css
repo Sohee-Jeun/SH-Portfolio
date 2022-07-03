@@ -581,6 +581,7 @@ button {
     font-size: var(--font-regular);
   }
   .language {
+    font-size: var(--font-small);
     margin-bottom: 8px;
   }
   /* About Me */
