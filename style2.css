@@ -504,6 +504,7 @@ button {
   }
   .home_container_text {
     padding-left: 15%;
+    height: auto;
   }
   .greeting,
   .intro {
