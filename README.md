@@ -226,9 +226,12 @@ dots.forEach((dot, index)=>{
 
 
 
+<hr/>
 
 ## References
-typing animation
+### Typing animation
 https://gist.github.com/djpandab/adf0f5fbb4b36cc8a6c0b9bb74faf2f9
 https://medium.com/front-end-weekly/how-to-create-typing-effect-in-css-and-js-3252dd807f0a
 
+### Image Slide
+https://www.w3schools.com/howto/howto_js_slideshow.asp
