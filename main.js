@@ -25,11 +25,6 @@ navbarMenu.addEventListener("click", (event) => {
   selectedNavItem(target);
 });
 
-function scrollIntoView(selector) {
-  const scrollTo = document.querySelector(selector);
-  scrollTo.scrollIntoView({ behavior: "smooth" });
-}
-
 const sectionIds = ["#home", "#skills", "#projects", "#aboutme", "#contactme"];
 const sections = sectionIds.map((id) => document.querySelector(id));
 const navItems = sectionIds.map((id) =>
@@ -41,6 +36,11 @@ function selectNavItem(selected) {
   selectedNavItem.classList.remove("active");
   selectedNavItem = selected;
   selectedNavItem.classList.add("active");
+}
+function scrollIntoView(selector) {
+  const scrollTo = document.querySelector(selector);
+  scrollTo.scrollIntoView({ behavior: "smooth" });
+  selectedNavItem(navItems[sectionIds.indexOf(selector)]);
 }
 const observerOptions = {
   root: null,
