@@ -227,5 +227,5 @@ greeting.innerHTML = welcomeText;
 const toggleBtn = document.querySelector(".nav_togleBtn");
 const navMenu = document.querySelector(".navbar__menu");
 toggleBtn.addEventListener("click", () => {
-  navMenu.classList.toggle("open");
+  navMenu.classList.toggle("active");
 });
