@@ -131,7 +131,7 @@ dots.forEach((dot, index) => {
 
 /*  Active scroll menu to navbar */
 
-//Home typing text function
+//Home typing text class
 class Typewriter {
   constructor(txtEl, words, duration = 2500) {
     this.txtEl = txtEl;
