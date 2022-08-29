@@ -130,12 +130,6 @@ dots.forEach((dot, index) => {
 });
 
 //Home typing text class
-function typing() {
-  const txtEl = document.querySelector(".home__title");
-  const words = JSON.parse(txtEl.getAttribute("data-words"));
-  const duration = txtEl.getAttribute("data-wait");
-  new Typewriter(txtEl, words, duration);
-}
 
 class Typewriter {
   constructor(txtEl, words, duration = 2500) {
@@ -178,7 +172,12 @@ class Typewriter {
 }
 
 document.addEventListener("DOMContentLoaded", typing);
-
+function typing() {
+  const txtEl = document.querySelector(".home__title");
+  const words = JSON.parse(txtEl.getAttribute("data-words"));
+  const duration = txtEl.getAttribute("data-wait");
+  new Typewriter(txtEl, words, duration);
+}
 /**
  * greetings are difference depending on time.
  */
