@@ -22,7 +22,7 @@ navbarMenu.addEventListener("click", (event) => {
   }
   navbarMenu.classList.remove("open");
   scrollIntoView(link);
-  selectedNavItem(target);
+  selectNavItem(target);
 });
 
 const sectionIds = ["#home", "#skills", "#projects", "#aboutme", "#contactme"];
