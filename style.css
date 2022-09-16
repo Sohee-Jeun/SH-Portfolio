@@ -459,6 +459,10 @@ button {
   font-size: var(--font-medium);
   color: var(--color--dark-green);
 }
+.co_social i:hover {
+  transform: scale(1.2) rotate(3deg);
+  color: var(--color--warm-green);
+}
 
 .copyright {
   font-size: var(--font-small);
